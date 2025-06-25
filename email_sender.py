@@ -9,7 +9,7 @@ port = ul.PORT
 sender_email = ul.SENDER_EMAIL
 password = ul.PASSWORD
 
-clientes = pd.read_excel("Emails.xlsx")
+clientes = pd.read_excel("emails.xlsx")
 
 with open("email_message.html", "r", encoding="utf-8") as file:
     html_template = file.read()

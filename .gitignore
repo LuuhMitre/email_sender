@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 user_logs.py
 Emails.xlsx
+
+readme_example.md
