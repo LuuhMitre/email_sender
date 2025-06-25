@@ -1,8 +1,25 @@
+# Ambiente Virtual
 .venv/
-.vscode/
+venv/
+env/
+
+# Cache do Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Configuração de Editor
+.vscode/
+.idea/
+
+# Arquivos de dados do usuário e logs
 user_logs.py
-Emails.xlsx
+emails.xlsx
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
 
 readme_example.md
