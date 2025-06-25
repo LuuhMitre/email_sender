@@ -3,6 +3,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import user_logs as ul
+from email.mime.image import MIMEImage
 
 smtp_server = ul.SMTP_SERVER
 port = ul.PORT
@@ -32,6 +33,14 @@ for index, cliente in clientes.iterrows():
         server = smtplib.SMTP(smtp_server, port)
         server.starttls()
         server.login(sender_email, password)
+        # substitua com o nome da imagem real
+        with open("images/logo_master.png", "rb") as img_file:
+            img = MIMEImage(img_file.read())
+            # precisa bater com o cid no HTML
+            img.add_header('Content-ID', '<signature_image>')
+            img.add_header('Content-Disposition', 'inline',
+                           filename="logo_master.png")
+            msg.attach(img)
         server.sendmail(msg['From'], msg['To'], msg.as_string())
         print("Email sent successfully!")
 
