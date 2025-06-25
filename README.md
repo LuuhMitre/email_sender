@@ -53,7 +53,9 @@ Antes de começar, garanta que você tenha o **Python 3** e o **pip** instalados
     | João Silva    | joao.silva@email.com    |
     | Maria Souza   | maria.s@exemplo.org     |
     | Carlos Santos | carlos-santos@provedor.net|
-
+    
+5.  **Atualize o corpo do e-mail:**
+    Modifique o arquivo `email_message.html` de acordo com o e-mail que você deseja encaminhar. Para manter o texto personalizado com o nome do cliente, é necessário incluir a variável `{cliente}` no local desejado.
 
 ## 🚀 Como Executar
 
