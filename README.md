@@ -1,6 +1,8 @@
 # Automatizador de Envio de E-mails
 
-
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
+![SMTP](https://img.shields.io/badge/SMTP-Email-green)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 
 ## 📄 Descrição
 
