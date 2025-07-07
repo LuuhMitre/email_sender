@@ -15,7 +15,6 @@ __pycache__/
 
 # Arquivos de dados do usuário e logs
 user_logs.py
-emails.xlsx
 *.log
 
 # Arquivos de sistema
@@ -23,3 +22,7 @@ emails.xlsx
 Thumbs.db
 
 readme_example.md
+
+.env/
+.env
+contatos.xlsx

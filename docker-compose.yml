@@ -1,0 +1,9 @@
+services:
+  email_sender:
+    build: .
+    container_name: email_sender
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: python main.py
